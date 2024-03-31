@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Один день</title>
+    <link rel="stylesheet" href="{% static "css/one-day.css" %}">
+    <script src="{% static "js/one-day.js" %}" defer></script>
+</head>
+<body>
+    <label>Введите дату, по которой нужно просмотреть данные:<input type="date" name="inp-date" id="inp-date">
+    </label>
+    <button id="btn-see-one-day-data">OK</button>
+    <div id="one-day-data"></div>
+    <p>Просмотреть данные по всем датам:</p>
+    <button id="btn-see-all-days-data">OK</button>
+    <div id="all-days-data"></div>
+</body>
+</html>

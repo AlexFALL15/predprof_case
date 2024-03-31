@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#windowsTable {
+    display: flex;
+    flex-direction: column;
+}
+
+.window {
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: #787878;
+    font-size: 3rem;
+    font-weight: 900;
+    border: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windowLight {
+    background-color: #dfdf07;
+}
+
+.floorDiv {
+    display: flex;
+}
+
+#one-day-data {
+    display: flex;
+}
+
+.dayDiv {
+    display: flex;
+    margin-bottom: 20px
+}
+
+.answerDiv {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #000;
+}
+
