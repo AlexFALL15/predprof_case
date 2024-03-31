@@ -28,3 +28,19 @@
 .floorDiv {
     display: flex;
 }
+
+#one-day-data {
+    display: flex;
+}
+
+.dayDiv {
+    display: flex;
+    margin-bottom: 20px
+}
+
+.answerDiv {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #000;
+}
+
