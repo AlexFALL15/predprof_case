@@ -40,7 +40,7 @@ let DATA;
 //     }, 
 // }
 document.getElementById('btn-see-data').addEventListener('click', () => {
-    fetch('/api/get_data_one_day')
+    fetch('/api/get_data')
         .then((response) => {
             return response.json();
         })
@@ -52,15 +52,27 @@ document.getElementById('btn-see-data').addEventListener('click', () => {
 
 
 function viewDataByDay(date) {
-    drawBoard();
+    drawBoard(date);
 }
 
-function drawBoard() {
+function reverseChildren(parent) {
+    for (var i = 1; i < parent.childNodes.length; i++){
+        parent.insertBefore(parent.childNodes[i], parent.firstChild);
+    }
+}
+
+function drawBoard(date) {
     const windowsTableDiv = document.createElement('div');
     windowsTableDiv.id = 'windowsTable';
-    const firstFloor = document.createElement('')
-    windowsTableDiv.appendChild()
-    for (let i=0;i<4;i++) {
-        windowsTableDiv.insert
+    for (let i=0;i<DATA[date]['windows'].length;i++) {
+        const floorDiv = document.createElement('div');
+        floorDiv.classList.add('floorDiv');
+        for (let j=0; j<DATA[date]['windows_for_room'].reduce((partialSum, a) => partialSum + a, 0);j++) {
+            const windowDiv = document.createElement('div');
+            windowDiv.classList.add('window');
+            windowDiv.
+        }
+        
+        windowsTableDiv.append();
     }
 }
